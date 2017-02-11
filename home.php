@@ -2,7 +2,7 @@
 // home.php (homepage) template file. 
 
 // Primary content is the page body copy
-$content = $page->body;
+$content = $page->bod;
 
 // Append navigation to child pages underneath the body copy
 // See the _func.php file for the renderNav() function example
@@ -29,5 +29,5 @@ if(count($page->images)) {
 } else {
 	// no images... 
 	// make sidebar contain text content if page has it
-	$sidebar = $page->sidebar4; 
+	$sidebar = $page->sidebar; 
 }
