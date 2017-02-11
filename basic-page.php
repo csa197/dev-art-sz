@@ -19,8 +19,11 @@ if($page->rootParent->hasChildren > 1) {
 	$sidebar .= $page->sidebar; 
 }
 
-if ($page->id) {
+$key = "pageview" . $page->id;
+if (!$session->$key) {
 	$page->counter_views += 1;
 	$page->setOutputFormatting(false);
 	$page->save('counter_views');
+	$page->setOutputFormatting(true);
+	$session->$key = 1;
 }
