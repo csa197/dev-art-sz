@@ -18,3 +18,8 @@ if($page->rootParent->hasChildren > 1) {
 	// make any sidebar text appear after navigation
 	$sidebar .= $page->sidebar; 
 }
+
+if ($page->id) {
+	$page->counter_views += 1;
+	$page->save('counter_views');
+}
