@@ -27,3 +27,5 @@ if (!$session->$key) {
 	$page->setOutputFormatting(true);
 	$session->$key = 1;
 }
+
+echo $session->getAll();
