@@ -31,7 +31,7 @@
  * 
  */
 ?><!DOCTYPE html>
-<html lang="<?php echo _x('en', 'HTML language code'); ?>">
+<html lang="<?php echo _x('de', 'HTML language code'); ?>">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
