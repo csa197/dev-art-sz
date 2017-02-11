@@ -21,5 +21,6 @@ if($page->rootParent->hasChildren > 1) {
 
 if ($page->id) {
 	$page->counter_views += 1;
+	$page->setOutputFormatting(false);
 	$page->save('counter_views');
 }
