@@ -58,7 +58,7 @@
 	?>
 	
 </head>
-<body class="<?php if($sidebar) echo "has-sidebar"; ?>">
+<body class="<?php if($sidebar) echo "has-sidebar1"; ?>">
 
 	<!-- language switcher / navigation -->
 	<ul class='languages'><?php
