@@ -4,7 +4,7 @@
 
 // Primary content is the page's body copy
 $content = $page->body; 
-var_dump($session->key);
+var_dump($session->$key);
 
 // If the page has children, then render navigation to them under the body.
 // See the _func.php for the renderNav example function.
