@@ -92,7 +92,7 @@ function renderNavTree($items, $maxDepth = 0, $fieldNames = '', $class = 'nav') 
 		$out .= $item->id == wire('page')->id ? "<li class='current'>" : "<li>";
 
 		// markup for the link
-		$out .= "<a href='$item->url'>$item->title</a>";
+		$out .= "<a href='$item->url'>$item->title <span class='label label-default'>$page->counter_views</span></h3></a>"; 
 
 		// if there are extra field names specified, render markup for each one in a <div>
 		// having a class name the same as the field name
