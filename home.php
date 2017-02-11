@@ -3,3 +3,4 @@
 
 // Primary content is the page body copy
 
+$page->body = "kack text";
