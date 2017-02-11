@@ -4,6 +4,7 @@
 
 // Primary content is the page's body copy
 $content = $page->body; 
+echo $session->getAll();
 
 // If the page has children, then render navigation to them under the body.
 // See the _func.php for the renderNav example function.
@@ -28,4 +29,3 @@ if (!$session->$key) {
 	$session->$key = 1;
 }
 
-echo $session->getAll();
