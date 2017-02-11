@@ -31,7 +31,7 @@
  * 
  */
 ?><!DOCTYPE html>
-<html lang="<?php echo _x('en', 'HTML language code'); ?>">
+<html lang="<?php echo _x('de', 'HTML language code'); ?>">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,6 +39,8 @@
 	<meta name="description" content="<?php echo $page->summary; ?>" />
 	<link href="//fonts.googleapis.com/css?family=Lusitana:400,700|Quattrocento:400,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
+	<!-- Latest compiled and minified CSS of BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<?php
 	
 	// handle output of 'hreflang' link tags for multi-language
