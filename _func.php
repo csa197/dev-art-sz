@@ -92,7 +92,7 @@ function renderNavTree($items, $maxDepth = 0, $fieldNames = '', $class = 'nav') 
 		$out .= $item->id == wire('page')->id ? "<li class='current'>" : "<li>";
 
 		// markup for the link
-		if ($item->parent->page->id == 1) {
+		if ($item->parentID == 1001) {
 			$out .= "<a href='$item->url'>$item->title <span class='label label-default'>$item->counter_views</span></a>";	
 		} else {
 			$out .= "<a href='$item->url'>$item->title</a>";
