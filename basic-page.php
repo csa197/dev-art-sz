@@ -20,7 +20,7 @@ if($page->rootParent->hasChildren > 1) {
 	$sidebar .= $page->sidebar; 
 }
 
-$key = "pageview" . $page->id;
+$key = "pageview" . sha1($page->id);
 if (!$session->$key) {
 	$page->counter_views += 1;	
 	$page->setOutputFormatting(false);
